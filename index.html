@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transfer de date între servere</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Transfer de date între servere</h1>
+
+  <button id="scrapeButton">Web Scraping</button>
+
+  <h2>Date obținute prin Web Scraping</h2>
+  <table id="scrapedTable">
+    <thead>
+      <tr>
+        <th>Câmp 1</th>
+        <th>Câmp 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aici vor fi afișate datele obținute prin Web Scraping -->
+    </tbody>
+  </table>
+
+  <h2>Inserare pe Server 1</h2>
+  <form id="insertForm">
+    <label for="field1">Câmp 1:</label>
+    <input type="text" id="field1" name="field1" required>
+    <br>
+    <label for="field2">Câmp 2:</label>
+    <input type="text" id="field2" name="field2" required>
+    <br>
+    <button type="submit">Inserează pe Server 1</button>
+  </form>
+
+  <h2>Date de pe Server 1</h2>
+  <table id="server1Table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Câmp 1</th>
+        <th>Câmp 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aici vor fi afișate datele de pe Server 1 -->
+    </tbody>
+  </table>
+
+  <h2>Inserare pe Server 2</h2>
+  <form id="insertForm2">
+    <label for="field3">Câmp 3:</label>
+    <input type="text" id="field3" name="field3" required>
+    <br>
+    <button type="submit">Inserează pe Server 2</button>
+  </form>
+
+  <h2>Date de pe Server 2</h2>
+  <table id="server2Table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Câmp 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aici vor fi afișate datele de pe Server 2 -->
+    </tbody>
+  </table>
+
+  <h2>Ștergere înregistrare</h2>
+  <form id="deleteForm">
+    <label for="deleteField">Câmp pentru ștergere:</label>
+    <input type="text" id="deleteField" name="deleteField" required>
+    <br>
+    <button type="submit">Șterge</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
